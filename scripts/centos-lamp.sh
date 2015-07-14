@@ -13,7 +13,7 @@ chkconfig httpd on
 service httpd stop
 
 rm -rf /var/www/html
-ls -s /vagrant /var/www/html
+ln -s /vagrant /var/www/html
 
 service httpd start
 
